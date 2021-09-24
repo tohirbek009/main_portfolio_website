@@ -6,6 +6,7 @@ import birzoom from './images/birzoom.png'
 import education from './images/education.png'
 import bethany from './images/bethany.png'
 import fake_shop from './images/fake_shop.png'
+import quiz_platform from './images/quiz_platform.png'
 import { SkillsParagraph, SkillsParSpan, ThreeDots, VisistSiteBtn } from './AppStyle';
 import { useState } from 'react';
 function App() {
@@ -233,6 +234,16 @@ function App() {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                     <VisistSiteBtn href='https://festive-jackson-5b5b72.netlify.app/' className='visit-site-btn'>Visit Site</VisistSiteBtn>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src={quiz_platform} alt=""/>
+                    <div class="text">Quiz Platform</div>
+                    <p>
+                        Find the answers all questions in quiz platform that includes some fields 
+                    </p>
+                    <VisistSiteBtn href='https://quizplatform.netlify.app/' className='visit-site-btn'>Visit Site</VisistSiteBtn>
                 </div>
             </div>
         </div>
