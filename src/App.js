@@ -7,6 +7,9 @@ import education from './images/education.png'
 import bethany from './images/bethany.png'
 import fake_shop from './images/fake_shop.png'
 import quiz_platform from './images/quiz_platform.png'
+import facebook from './images/facebook.png'
+import chat_app from './images/chat-app.gif'
+import tic_tac_toe from './images/tic-tac-toe.jpeg'
 import { SkillsParagraph, SkillsParSpan, ThreeDots, VisistSiteBtn } from './AppStyle';
 import { useState } from 'react';
 function App() {
@@ -162,6 +165,13 @@ function App() {
                     </div>
                     <div class="line js"></div>
                 </div>
+                <div class='bars'>
+                    <div class="info">
+                        <span>React</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
                 <div class="bars">
                     <div class="info">
                         <span>Python</span>
@@ -247,6 +257,87 @@ function App() {
                 </div>
             </div>
         </div>
+        {/* Next portfolios sites start */}
+        <section id="projects">
+            <div class="projects container">
+                <div class="projects-header">
+                    <h1 class="section-title">Recent <span>Projects</span></h1>
+                </div>
+                <div class="all-projects">
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Facebook <span>(website)</span></h1>
+                            <div className='view-site'>
+                                <a href="https://github.com/tohirbek009/facebook-clone">
+                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                </a>
+                                <a href="https://faceboook-clone.netlify.app/">
+                                    <i class="fas fa-link" title="See Project Site"></i>
+                                </a>
+                            </div>
+                            <h2>Making clone site is love</h2>
+                            <p>
+                                Open this facebook-clone website and login with your email👨‍💻👨‍💻👨‍💻. 
+                                In this clone site you can create new posts and write comment💬 for all posts.
+                                Also, If you like one post or comment, you can click like👍 button and see all users 
+                                who click like for this post and comment.
+                            </p>
+                        </div>
+                        <a href="https://faceboook-clone.netlify.app/" class="project-img">
+                            <img src={facebook} alt="not found"/>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Chat App <span>(application)</span></h1>
+                            <div className='view-site'>
+                                <a href="https://github.com/tohirbek009/chat-application">
+                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                </a>
+                                <a href="https://react-chat-applicationn.netlify.app/">
+                                    <i class="fas fa-link" title="See Project Site"></i>
+                                </a>
+                            </div>
+                            <h2>Creating chat app is nice</h2>
+                            <p>
+                                Visit to this application and you can enter
+                                as a tester user: <br/> <i>username👤: ForTesting,</i> 
+                                <br/> <i>password🗝: test_chat_app</i><br/> 
+                                In this app you can create new group and add some users, also
+                                talk with your friend in all groups.
+                            </p>
+                        </div>
+                        <a href="https://react-chat-applicationn.netlify.app/" class="project-img">
+                            <img src={chat_app} alt="not found"/>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Tic Tac Toe <span>(game)</span></h1>
+                            <div className='view-site'>
+                                <a href="https://github.com/tohirbek009/tic-tac-toe">
+                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                </a>
+                                <a href="https://tic-tac-playing.netlify.app/">
+                                    <i class="fas fa-link" title="See Project Site"></i>
+                                </a>
+                            </div>
+                            <h2>Play with your friend👥</h2>
+                            <p>
+                                This is a game in which two players seek in alternate turns to complete a row, 
+                                a column, or a diagonal with either three O's or three X's drawn in the spaces of 
+                                a grid of nine squares; noughts and crosses.<br/>Start to play this interesting game with your friend now!
+                            </p>
+                        </div>
+                        <a href='https://tic-tac-playing.netlify.app/' class="project-img">
+                            <img src={tic_tac_toe} alt="not found"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {/* <!--End Project Section --> */}
+
     </div>
 </section>
 
