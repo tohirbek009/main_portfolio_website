@@ -10,6 +10,9 @@ import quiz_platform from './images/quiz_platform.png'
 import facebook from './images/facebook.png'
 import chat_app from './images/chat-app.gif'
 import tic_tac_toe from './images/tic-tac-toe.jpeg'
+import bg_video from './images/bg_video2.mp4'
+import logo_name from './images/logo_name.png'
+import { GitHub, Web, Menu, Cancel, KeyboardArrowUp } from '@material-ui/icons';
 import { SkillsParagraph, SkillsParSpan, ThreeDots, VisistSiteBtn } from './AppStyle';
 import { useState } from 'react';
 function App() {
@@ -36,11 +39,11 @@ function App() {
   return (
     <div className="App">
       <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+        <KeyboardArrowUp />
       </div>
       <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <a href="#" class='logo'><img src={logo_name} alt=""/></a>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -50,13 +53,17 @@ function App() {
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <Menu id="menu-btn" />
+                <Cancel id='cancel-btn'/>
             </div>
         </div>
       </nav>
       
 {/* <!--    home section start--> */}
 <section class="home" id="home">
+    <video autoPlay='true' loop muted='true' id="myVideo">
+        <source src={bg_video} type="video/mp4"/>
+    </video>
     <div class="max-width">
         <div class="home-content">
             <div class="text-1">Hello, my name is</div>
@@ -269,10 +276,10 @@ function App() {
                             <h1>Facebook <span>(website)</span></h1>
                             <div className='view-site'>
                                 <a href="https://github.com/tohirbek009/facebook-clone">
-                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                    <GitHub className='fa-github' title="See Github Code" />
                                 </a>
                                 <a href="https://faceboook-clone.netlify.app/">
-                                    <i class="fas fa-link" title="See Project Site"></i>
+                                    <Web className='fa-link' title='See Github Code' />
                                 </a>
                             </div>
                             <h2>Making clone site is love</h2>
@@ -292,10 +299,10 @@ function App() {
                             <h1>Chat App <span>(application)</span></h1>
                             <div className='view-site'>
                                 <a href="https://github.com/tohirbek009/chat-application">
-                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                    <GitHub className='fa-github' title="See Github Code" />
                                 </a>
                                 <a href="https://react-chat-applicationn.netlify.app/">
-                                    <i class="fas fa-link" title="See Project Site"></i>
+                                    <Web className='fa-link' title='See Github Code' />
                                 </a>
                             </div>
                             <h2>Creating chat app is nice</h2>
@@ -316,10 +323,10 @@ function App() {
                             <h1>Tic Tac Toe <span>(game)</span></h1>
                             <div className='view-site'>
                                 <a href="https://github.com/tohirbek009/tic-tac-toe">
-                                    <i class="fab fa-github" title='See GitHub Code'></i>
+                                    <GitHub className='fa-github' title="See Github Code" />
                                 </a>
                                 <a href="https://tic-tac-playing.netlify.app/">
-                                    <i class="fas fa-link" title="See Project Site"></i>
+                                    <Web className='fa-link' title='See Github Code' />
                                 </a>
                             </div>
                             <h2>Play with your friend👥</h2>

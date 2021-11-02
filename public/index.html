@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="logo.png" style="border-radius: 50%;" />
+    <link rel="icon" href="t_image.png" style="border-radius: 50%;" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -68,7 +68,8 @@
     // toggle menu/navbar script
     $('.menu-btn').click(function (){
         $('.navbar .menu').toggleClass("active")
-        $('.menu-btn i').toggleClass("active")
+        $('.menu-btn #menu-btn').toggleClass("no-active-btn")
+        $('.menu-btn #cancel-btn').toggleClass("active-btn")
         $('.scroll-up-btn').toggleClass("no-active")
     })
 

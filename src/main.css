@@ -23,26 +23,24 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 9px 0;
     background:crimson;
 }
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.navbar .logo{
+    width: 190px !important;
 }
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
+.navbar .logo img{
+    width: 100% !important;
 }
-.navbar.sticky .logo a span{
+/* .navbar.sticky .logo a span{
     color: #ffffff;
-}
+} */
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -68,6 +66,18 @@ html{
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.menu-btn #menu-btn{
+    display: block;
+}
+.menu-btn #cancel-btn{
+    display: none;
+}
+.menu-btn #menu-btn.no-active-btn{
+    display: none;
+}
+.menu-btn #cancel-btn.active-btn{
+    display: block;
 }
 .scroll-up-btn{
     position: fixed;
@@ -99,13 +109,23 @@ html{
 /*home section styling*/
 .home{
     display: flex;
-    background: url("images/banner2.jpg") no-repeat center;
+    /* background: url("images/bg_video.mp4") no-repeat center; */
     height: 100vh;
     background-size: cover;
     color: #ffffff;
     min-height: 500px;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
+    background: rgba(0, 0, 0, 0.330);
 }
+.home #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100vh;
+    z-index: -1;
+  }
 .home .max-width{
     margin:  auto 0 auto 40px;
 }
@@ -585,6 +605,7 @@ footer span a:hover{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+
     }
     .navbar .menu.active{
         left: 0;
@@ -657,6 +678,15 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .navbar .max-width{
+        padding: 0 15px;
+    }
+    .menu-btn{
+        margin-top: -18px;
+    }
+    .navbar .logo{
+        width: 140px !important;
     }
 }
 
