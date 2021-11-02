@@ -12,7 +12,14 @@ import chat_app from './images/chat-app.gif'
 import tic_tac_toe from './images/tic-tac-toe.jpeg'
 import bg_video from './images/bg_video2.mp4'
 import logo_name from './images/logo_name.png'
-import { GitHub, Web, Menu, Cancel, KeyboardArrowUp, Brush, PhoneIphone, ShowChart, Person, LocationOn, Email } from '@material-ui/icons';
+import { 
+    GitHub, Web, Menu, 
+    Cancel, KeyboardArrowUp, 
+    Brush, PhoneIphone, ShowChart, 
+    Person, LocationOn, Email,
+    Facebook, LinkedIn, Telegram, 
+    Instagram
+} from '@material-ui/icons';
 import { SkillsParagraph, SkillsParSpan, ThreeDots, VisistSiteBtn } from './AppStyle';
 import { useState } from 'react';
 function App() {
@@ -405,6 +412,13 @@ function App() {
                     </div>
                 </form>
             </div>
+        </div>
+        <div className='social-links'>
+            <a href='https://www.facebook.com/tohirbek.odilov.71' style={{color: 'inherit'}}><Facebook className='social-icon'/></a>
+            <a href='https://www.linkedin.com/in/tohirbek-odilov-38058221b/' style={{color: 'inherit'}}><LinkedIn className='social-icon'/></a>
+            <a href='https://www.instagram.com/tohirbekodilkuziyev/' style={{color: 'inherit'}}><Instagram className='social-icon'/></a>
+            <a href='https://github.com/tohirbek009' style={{color: 'inherit'}}><GitHub className='social-icon'/></a>
+            <a href='https://t.me/TUIT_student20' style={{color: 'inherit'}}><Telegram className='social-icon'/></a>
         </div>
     </div>
 </section>
