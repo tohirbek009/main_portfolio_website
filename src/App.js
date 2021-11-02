@@ -12,7 +12,7 @@ import chat_app from './images/chat-app.gif'
 import tic_tac_toe from './images/tic-tac-toe.jpeg'
 import bg_video from './images/bg_video2.mp4'
 import logo_name from './images/logo_name.png'
-import { GitHub, Web, Menu, Cancel, KeyboardArrowUp } from '@material-ui/icons';
+import { GitHub, Web, Menu, Cancel, KeyboardArrowUp, Brush, PhoneIphone, ShowChart, Person, LocationOn, Email } from '@material-ui/icons';
 import { SkillsParagraph, SkillsParSpan, ThreeDots, VisistSiteBtn } from './AppStyle';
 import { useState } from 'react';
 function App() {
@@ -102,7 +102,7 @@ function App() {
         <div class="serv-content">
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-paint-brush"></i>
+                    <Brush className='i' />
                     <div class="text">Web Design</div>
                     <p>Clean, modern designs - optimized for
                     performance, search engines, and
@@ -112,7 +112,7 @@ function App() {
 
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-chart-line"></i>
+                    <ShowChart className='i' />
                     <div class="text">Analytics</div>
                     <p>Get insights into who is browsing your
                     site so that you can make smarter
@@ -122,7 +122,7 @@ function App() {
 
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-mobile"></i>
+                    <PhoneIphone className='i' />
                     <div class="text">Mobile-Friendly</div>
                     <p>A responsive design makes your 
                     website accessible to all users, 
@@ -361,21 +361,21 @@ function App() {
                 </p>
                 <div class="icons">
                     <div class="row">
-                        <i class="fas fa-user"></i>
+                        <Person className='i' />
                         <div class="info">
                             <div class="head">Name</div>
                             <div class="sub-title">Tohirbek Odilkuziyev</div>
                         </div>
                     </div>
                     <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <LocationOn className='i' />
                         <div class="info">
                             <div class="head">Addres</div>
                             <div class="sub-title">Tashkent, Uzbekistan</div>
                         </div>
                     </div>
                     <div class="row">
-                        <i class="fas fa-envelope"></i>
+                        <Email className='i' />
                         <div class="info">
                             <div class="head">Email</div>
                             <div class="sub-title">odilovtohirbek009@gmail.com</div>
